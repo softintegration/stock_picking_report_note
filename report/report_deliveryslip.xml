@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template inherit_id="stock.report_delivery_document" id="report_delivery_document_inherited">
+        <xpath expr="//div[@name='signature']" position="before">
+            <t t-if="o.note">
+                <p t-field="o.note"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>
